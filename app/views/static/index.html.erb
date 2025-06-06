@@ -1,0 +1,20 @@
+<p>
+Content in the view
+</p>
+<p>
+I forgot html erb syntax entirely
+</p>
+<p>
+  Turns out it's just like html but with ruby, but that ruby needs to be wrapped in <code>&lt;%= %&gt;</code> tags to be executed and outputted.
+</p>
+<p>
+  <%= "This is a ruby string that will be outputted in the view" %>
+</p>
+<p>
+  <%= "This is a ruby string that will be outputted in the view, but with a variable: #{1 + 1}" %>
+</p>
+<% @example_names.each do |name| %>
+  <p>
+    <%= "This is a ruby loop that prints out the names in @example_names, name: #{name}" %>
+  </p>
+<% end %>
