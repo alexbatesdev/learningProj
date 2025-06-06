@@ -1,5 +1,10 @@
 # README
 
+## This is a project I've made to learn Ruby on Rails
+## I am following the Ruby on Rails tutorial by the Odin Project: https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-on-rails
+
+# Left off at: https://guides.rubyonrails.org/v7.2/getting_started.html#adding-a-second-model
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
