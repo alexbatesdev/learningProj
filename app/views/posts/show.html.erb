@@ -21,3 +21,10 @@
   turbo_method: :delete,
   turbo_confirm: "Are you sure you want to delete this post?"
 } %>
+
+<h2>Comments:</h2>
+<%= render @post.comments %>
+
+
+<h2>Add a Comment:</h2>
+<%= render "comments/form", post: @post %>
