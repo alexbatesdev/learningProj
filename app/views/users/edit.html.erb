@@ -1,0 +1,25 @@
+<h1>Edit User</h1>
+
+<% if @user.errors.any? %>
+  <div>
+    <p>
+      <%= pluralize(@user.errors.count, "error") %> prohibited this article from being saved:
+    </p>
+    <ul>
+      <% @artusericle.errors.each do |error| %>
+        <li><%= error.full_message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_with model: @user do |form|  %>
+  <%= form.label :username, "Username:" %>
+  <%= form.text_field :username, placeholder: "Xx_AwesomeSauce_xX" %>
+  <%= form.label :email, "Email:" %>
+  <%= form.text_field :email, placeholder: "ApplesKid@starman.net" %>
+  <%= form.label :password, "Password:" %>
+  <%= form.password_field :password, placeholder: "password123" %>
+
+  <%= form.submit "Submit" %>
+<% end %>

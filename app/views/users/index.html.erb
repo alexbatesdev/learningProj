@@ -1,0 +1,6 @@
+<% @users.each do |user| %>
+<div>
+  ID: <b><%= user.id %></b>
+  Username: <%= link_to user.username, edit_user_path(user) %>
+</div>
+<% end %>

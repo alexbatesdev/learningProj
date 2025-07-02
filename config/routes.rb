@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root to: "static#index"
   get "other_page" => "static#other_page", as: :other_page
 
+  resources :users, only: [:create, :new, :edit, :update, :index]
   resources :posts do
     resources :comments
   end

@@ -1,0 +1,12 @@
+<h1>New User</h1>
+
+<%= form_with model: @user do |form|  %>
+  <%= form.label :username, "Username:" %>
+  <%= form.text_field :username, placeholder: "Xx_AwesomeSauce_xX" %>
+  <%= form.label :email, "Email:" %>
+  <%= form.text_field :email, placeholder: "ApplesKid@starman.net" %>
+  <%= form.label :password, "Password:" %>
+  <%= form.password_field :password, placeholder: "password123" %>
+
+  <%= form.submit "Submit" %>
+<% end %>
